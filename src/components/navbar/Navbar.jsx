@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 // images and icons
 import Logo from '../../assets/images/logo.png';
 import { FaBars } from 'react-icons/fa';
+import { MdOutlineClose } from 'react-icons/md';
 
 // links from data file
 import { links } from '../../assets/data/data';
@@ -40,7 +41,7 @@ function Navbar() {
           onClick={() => setIsNavShowing(!isNavShowing)}
           className="nav__toggle-btn"
         >
-          <FaBars />
+          {isNavShowing ? <MdOutlineClose /> : <FaBars />}
         </button>
       </div>
     </nav>
