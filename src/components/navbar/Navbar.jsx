@@ -10,8 +10,11 @@ import { links } from '../../assets/data/data';
 
 // style
 import './navbar.css';
+import { useState } from 'react';
 
 function Navbar() {
+  const [isNavShowing, setIsNavShowing] = useState(false);
+
   return (
     <nav>
       <div className="container nav__container">
@@ -20,7 +23,7 @@ function Navbar() {
           <img src={Logo} alt="voće i povrće početna" />
         </Link>
         {/* links */}
-        <ul className="nav__links">
+        <ul className={`nav__links ${isNavShowing ? 'show_nav' : 'hide_nav'}`}>
           {links.map(({ name, path }, index) => (
             <li key={index}>
               <NavLink
@@ -33,7 +36,10 @@ function Navbar() {
           ))}
         </ul>
         {/* toggle button for mobile */}
-        <button className="nav__toggle-btn">
+        <button
+          onClick={() => setIsNavShowing(!isNavShowing)}
+          className="nav__toggle-btn"
+        >
           <FaBars />
         </button>
       </div>
