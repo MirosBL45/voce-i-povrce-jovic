@@ -8,6 +8,8 @@ nav {
   top: 0;
   left: 0;
   z-index: 99;
+  border-bottom-left-radius: var(--radius-big);
+  border-bottom-right-radius: var(--radius-big);
 }
 
 /* only shows on medium and small screens */
@@ -69,15 +71,22 @@ nav {
   }
   .nav__links {
     position: absolute;
-    top: 100%;
+    top: 105%;
     right: 0;
     flex-direction: column;
     gap: 0;
+    border-radius: var(--radius-small);
+    overflow: hidden;
+    perspective: 1000px;
   }
   .nav__links li {
     height: 4rem;
     width: 100%;
     box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+    animation: navAnimation 600ms ease forwards;
+    transform: rotateX(90deg);
+    opacity: 0;
+    transform-origin: top;
   }
   .nav__links li a {
     background: var(--color-primary);
@@ -87,7 +96,37 @@ nav {
     align-items: center;
     padding: 1rem 5rem 1rem 3rem;
   }
-  .active-nav,
+  /* animate menu drop-down */
+  .nav__links li:nth-child(2) {
+    animation-delay: 150ms;
+  }
+  .nav__links li:nth-child(3) {
+    animation-delay: 300ms;
+  }
+  .nav__links li:nth-child(4) {
+    animation-delay: 450ms;
+  }
+  .nav__links li:nth-child(5) {
+    animation-delay: 600ms;
+  }
+  .nav__links li:nth-child(6) {
+    animation-delay: 750ms;
+  }
+  .nav__links li:nth-child(7) {
+    animation-delay: 900ms;
+  }
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  .active-nav {
+    display: none;
+    position: static;
+    color: var(--color-secondary);
+    font-weight: var(--bold-light);
+  }
   .active-nav::after {
     display: none;
   }

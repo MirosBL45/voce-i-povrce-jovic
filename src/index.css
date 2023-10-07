@@ -25,8 +25,13 @@
   --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
   --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
 
+  --bold-light: 500;
+
   --container-width-lg: 80%;
   --container-width-md: 90%;
+
+  --radius-big: 20px;
+  --radius-small: 13px;
 
   --transition: all 230ms ease;
 }
