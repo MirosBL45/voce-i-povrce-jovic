@@ -25,15 +25,20 @@
   --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
   --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
 
+  --bold-extra-light: 400;
   --bold-light: 500;
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
 
-  --radius-big: 20px;
   --radius-small: 13px;
+  --radius-big: 20px;
+  --radius-bigger: 32px;
 
   --transition: all 230ms ease;
+
+  --font-small: 0.9rem;
+  --font-medium: 1.1rem;
 }
 
 /* general styles */
@@ -78,4 +83,35 @@ img {
   display: block;
   object-fit: cover;
   width: 100%;
+}
+
+.btn {
+  color: var(--color-gray-100);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  background: var(--color-primary);
+  border-radius: var(--radius-big);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.btn.lg {
+  padding: 1.2rem 3rem;
+  border-radius: var(--radius-bigger);
+  font-size: var(--font-medium);
+}
+
+.btn.sm {
+  padding: 0.4rem 1.2rem;
+  font-size: var(--font-small);
+  border-radius: var(--radius-small);
+}
+
+btn.sm:hover {
+  background: var(--color-gray-100);
 }

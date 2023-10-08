@@ -1,12 +1,13 @@
-// react stuff
+// all stuff
 import { Link } from 'react-router-dom';
+import './mainHeader.css';
 
 // images
 import BigImage from '../../assets/images/main_header.png';
 
-function Header() {
+function MainHeader() {
   return (
-    <header className="main_header">
+    <header className="main__header">
       <div className="container main__header-container">
         <div className="main__header-left">
           <h4>#100DaysOfWorkOut</h4>
@@ -30,4 +31,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default MainHeader;
