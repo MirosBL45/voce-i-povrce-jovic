@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './mainHeader.css';
 
 // images
-import BigImage from '../../assets/images/main_header.png';
+import BigImage from '../../../../assets/images/main_header.png';
 
 function MainHeader() {
   return (
@@ -23,7 +23,7 @@ function MainHeader() {
         <div className="main__header-right">
           <div className="main__header-circle"></div>
           <div className="main__header-image">
-            <img src={BigImage} alt="Main Header Image" />
+            <img src={BigImage} alt="Main Header" />
           </div>
         </div>
       </div>

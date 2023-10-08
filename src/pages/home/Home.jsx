@@ -1,4 +1,4 @@
-import MainHeader from '../../components/home/MainHeader';
+import MainHeader from '../../components/pageComponents/home/mainHeader/MainHeader';
 import './home.css';
 
 function Home() {
