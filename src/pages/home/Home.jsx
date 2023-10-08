@@ -1,9 +1,8 @@
-import './home.css'
+import Header from '../../components/home/Header';
+import './home.css';
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+  return <Header />;
 }
 
-export default Home
+export default Home;

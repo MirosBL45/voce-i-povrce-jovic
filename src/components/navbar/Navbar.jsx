@@ -20,7 +20,7 @@ function Navbar() {
     <nav>
       <div className="container nav__container">
         {/* logo */}
-        <Link to={'/'} className="logo">
+        <Link to={'/'} className="logo" onClick={() => setIsNavShowing(false)}>
           <img src={Logo} alt="voće i povrće početna" />
         </Link>
         {/* links */}
@@ -28,6 +28,7 @@ function Navbar() {
           {links.map(({ name, path }, index) => (
             <li key={index}>
               <NavLink
+                onClick={() => setIsNavShowing(!isNavShowing)}
                 to={path}
                 className={({ isActive }) => (isActive ? 'active-nav' : '')}
               >
