@@ -1,8 +1,8 @@
-import Header from '../../components/home/Header';
+import MainHeader from '../../components/home/MainHeader';
 import './home.css';
 
 function Home() {
-  return <Header />;
+  return <MainHeader />;
 }
 
 export default Home;
