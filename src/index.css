@@ -39,6 +39,7 @@
 
   --font-small: 0.9rem;
   --font-medium: 1.1rem;
+  --font-big: 1.5rem;
 }
 
 /* general styles */
@@ -114,4 +115,37 @@ img {
 
 btn.sm:hover {
   background: var(--color-gray-100);
+}
+
+section {
+  margin-top: 10rem;
+}
+
+.section__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section__head span {
+  background: var(--color-gray-500);
+  padding: 0.8rem;
+  border-radius: var(--radius-small);
+  color: var(--color-secondary);
+  font-size: var(--font-big);
+}
+
+.card {
+  background: var(--color-gray-500);
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem 0 3rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  background: transparent;
+  border-color: var(--color-gray-400);
+  cursor: default;
 }

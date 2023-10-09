@@ -1,5 +1,3 @@
-import React from 'react';
-
 function SectionHead({ icon, title, className }) {
   return (
     <div className={`section__head ${className}`}>
