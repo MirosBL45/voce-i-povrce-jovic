@@ -1,13 +1,15 @@
-// all stuff
-import './programs.css';
-
 // components
 import SectionHead from '../../../sectionHead/SectionHead';
 import Card from '../../../../UI/Card';
 
-// icons and stuff
+// style
+import './programs.css';
+
+// icons
 import { FaCrown } from 'react-icons/fa';
 import { AiFillCaretRight } from 'react-icons/ai';
+
+// data and stuff
 import { programs } from '../../../../assets/data/data';
 import { Link } from 'react-router-dom';
 

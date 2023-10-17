@@ -28,7 +28,6 @@
   text-align: left;
   position: relative;
 }
-
 .card.values__value span {
   position: absolute;
   top: -1.5rem;
