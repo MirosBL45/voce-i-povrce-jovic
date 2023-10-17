@@ -25,8 +25,9 @@
   --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
   --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
 
-  --bold-extra-light: 400;
-  --bold-light: 500;
+  --bold-extra-light: 300;
+  --bold-light: 400;
+  --bold-regular: 500;
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
@@ -128,9 +129,8 @@ section {
 }
 
 .section__head span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   background: var(--color-gray-500);
   padding: 0.8rem;
   border-radius: var(--radius-small);
@@ -160,4 +160,21 @@ section {
   color: var(--color-gray-100);
   font-size: 1.5rem;
   padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  border-radius: var(--radius-small);
+  transition: var(--transition);
+}
+
+.card:hover span {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.card small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: var(--bold-extra-light);
 }

@@ -21,7 +21,7 @@
 .main__header-left h4 {
   margin-bottom: 1rem;
   color: var(--color-secondary);
-  font-weight: var(--bold-extra-light);
+  font-weight: var(--bold-light);
 }
 .main__header-left p {
   margin: 1rem 0 3.5rem;
