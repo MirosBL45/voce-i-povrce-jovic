@@ -1,4 +1,5 @@
 // components
+import Footer from '../../components/footer/Footer';
 import FAQs from '../../components/pageComponents/home/faqs/FAQs';
 import MainHeader from '../../components/pageComponents/home/mainHeader/MainHeader';
 import Programs from '../../components/pageComponents/home/programs/Programs';
@@ -16,6 +17,7 @@ function Home() {
       <Values />
       <FAQs />
       <Testimonials />
+      <Footer />
     </>
   );
 }

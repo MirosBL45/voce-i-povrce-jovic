@@ -52,6 +52,11 @@
 .testimonials__btn {
     background: transparent;
     cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     svg {
         fill: var(--color-primary);
