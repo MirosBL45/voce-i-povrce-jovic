@@ -32,3 +32,19 @@
   position: absolute;
   top: -1.5rem;
 }
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+  .values__container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .values__wrapper {
+    gap: 4rem 3rem;
+  }
+  .values__image {
+    width: 70vw;
+    margin-inline: auto;
+  }
+}

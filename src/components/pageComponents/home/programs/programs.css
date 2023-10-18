@@ -14,3 +14,14 @@
   align-items: center;
   margin-top: 2.5rem;
 }
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+  .programs {
+    margin-top: 0rem;
+  }
+  .programs_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+}

@@ -27,3 +27,10 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+  .faqs__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

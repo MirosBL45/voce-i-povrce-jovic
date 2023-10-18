@@ -61,3 +61,21 @@ footer {
     border-top: 2px solid var(--color-primary-variant);
     margin-top: 5rem;
 }
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+    .footer__container {
+        margin: 0 100px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+        column-gap: 6rem;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-around;
+
+        article {
+            // flex-basis: 35%;
+            // align-items: center;
+        }
+    }
+}

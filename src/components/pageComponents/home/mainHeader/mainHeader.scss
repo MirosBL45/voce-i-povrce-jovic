@@ -53,3 +53,25 @@
 .main__header:hover .main__header-circle {
     filter: blur(7px);
 }
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+    .main__header {
+        // height: fit-content;
+        padding: 12rem 0;
+        height: 100vh;
+    }
+
+    .main__header-container {
+        gap: 0.6rem;
+    }
+
+    .main__header-circle {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .main__header-image img {
+        width: 90%;
+    }
+}
