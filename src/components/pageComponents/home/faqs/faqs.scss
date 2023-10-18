@@ -16,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 1rem;
     }
 
     p {
@@ -34,5 +35,13 @@
 @media screen and (max-width: 1024px) {
     .faqs__wrapper {
         grid-template-columns: 1fr;
+    }
+}
+
+/* MEDIA QUERIES (small screens) */
+@media screen and (max-width: 600px) {
+    .faqs__wrapper {
+        gap: 1rem;
+        margin-top: 3rem;
     }
 }

@@ -7,6 +7,8 @@
 .values__image {
     filter: saturate(0.25);
     transition: var(--transition);
+    border-radius: var(--radius-big);
+    overflow: hidden;
 }
 
 .values__image:hover {
@@ -51,6 +53,19 @@
 
     .values__image {
         width: 70vw;
+        margin-inline: auto;
+    }
+}
+
+/* MEDIA QUERIES (small screens) */
+@media screen and (max-width: 600px) {
+    .values__wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .card.values__value {
+        width: 80vw;
         margin-inline: auto;
     }
 }

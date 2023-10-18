@@ -32,3 +32,21 @@
         margin-top: 2rem;
     }
 }
+
+/* MEDIA QUERIES (small screens) */
+@media screen and (max-width: 600px) {
+    .programs {
+        margin-top: 6rem;
+    }
+
+    .programs_wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .programs__program {
+        width: 80vw;
+        margin-inline: auto;
+    }
+}
