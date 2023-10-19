@@ -10,6 +10,7 @@ nav {
     z-index: 99;
     border-bottom-left-radius: var(--radius-big);
     border-bottom-right-radius: var(--radius-big);
+    box-shadow: -2rem 2rem 5rem rgba($color: #000000, $alpha: 0.4);
 }
 
 /* only shows on medium and small screens */
@@ -67,8 +68,9 @@ nav {
         display: grid;
         place-items: center;
         background: transparent;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         cursor: pointer;
+        padding: 1rem;
 
         svg {
             color: var(--color-gray-100);

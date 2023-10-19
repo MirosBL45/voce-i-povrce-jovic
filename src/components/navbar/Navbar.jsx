@@ -1,5 +1,6 @@
 // react stuff
 import { Link, NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 // images and icons
 import Logo from '../../assets/images/logo.png';
@@ -11,7 +12,6 @@ import { links } from '../../assets/data/data';
 
 // style
 import './navbar.css';
-import { useState } from 'react';
 
 function Navbar() {
   const [isNavShowing, setIsNavShowing] = useState(false);
