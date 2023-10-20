@@ -295,3 +295,42 @@ export const trainers = [
     ],
   },
 ];
+
+const About1 = require("../images/about1.jpg");
+const About2 = require("../images/about2.jpg");
+const About3 = require("../images/about3.jpg");
+
+export const aboutData = [
+  {
+    title: 'Our Story',
+    image: About1,
+    sectionClass: 'about__story',
+    containerClass: 'about__story-container',
+    text: [
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam in odio reprehenderit, praesentium, omnis rerum asperiores expedita hic quod eligendi ipsam dolore quidem? Odit, harum nemo in quibusdam a ratione.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet maxime assumenda, amet eligendi quisquam ducimus rerum perspiciatis delectus. Culpa, cupiditate?',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, blanditiis.'
+    ],
+  },
+  {
+    title: 'Our Vision',
+    image: About2,
+    sectionClass: 'about__vision',
+    containerClass: 'about__vision-container',
+    text: [
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam in odio reprehenderit, praesentium, omnis rerum asperiores expedita hic quod eligendi ipsam dolore quidem? Odit, harum nemo in quibusdam a ratione.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet maxime assumenda, amet eligendi quisquam ducimus rerum perspiciatis delectus. Culpa, cupiditate?'
+    ],
+  },
+  {
+    title: 'Our Mission',
+    image: About3,
+    sectionClass: 'about__mission',
+    containerClass: 'about__mission-container',
+    text: [
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam in odio reprehenderit, praesentium, omnis rerum asperiores expedita hic quod eligendi ipsam dolore quidem? Odit, harum nemo in quibusdam a ratione.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet maxime assumenda, amet eligendi quisquam ducimus rerum perspiciatis delectus. Culpa, cupiditate?',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, blanditiis.'
+    ],
+  },
+]
