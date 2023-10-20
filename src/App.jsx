@@ -1,5 +1,5 @@
-// routers react
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// react stuff
+import { Routes, Route } from 'react-router-dom';
 
 // pages
 import Home from '../src/pages/home/Home';
@@ -13,11 +13,13 @@ import NotFound from '../src/pages/notFound/NotFound';
 // components
 import Navbar from '../src/components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import OpenInTop from './components/openInTop/OpenInTop';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
+      <OpenInTop />
       <Routes>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
@@ -28,7 +30,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
