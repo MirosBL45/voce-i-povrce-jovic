@@ -1,10 +1,11 @@
 // react stuff
-import { useLayoutEffect } from 'react';
+// import { useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function OpenInTop() {
   const { pathname } = useLocation();
-  useLayoutEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
