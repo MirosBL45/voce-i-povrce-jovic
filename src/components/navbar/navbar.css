@@ -101,22 +101,22 @@ nav {
   }
   /* animate menu drop-down */
   .nav__links li:nth-child(2) {
-    animation-delay: 150ms;
+    animation-delay: 130ms;
   }
   .nav__links li:nth-child(3) {
-    animation-delay: 300ms;
+    animation-delay: 260ms;
   }
   .nav__links li:nth-child(4) {
-    animation-delay: 450ms;
+    animation-delay: 390ms;
   }
   .nav__links li:nth-child(5) {
-    animation-delay: 600ms;
+    animation-delay: 520ms;
   }
   .nav__links li:nth-child(6) {
-    animation-delay: 750ms;
+    animation-delay: 650ms;
   }
   .nav__links li:nth-child(7) {
-    animation-delay: 900ms;
+    animation-delay: 780ms;
   }
   @keyframes navAnimation {
     to {

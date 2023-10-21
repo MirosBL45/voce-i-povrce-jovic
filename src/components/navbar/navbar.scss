@@ -108,7 +108,7 @@ nav {
     }
 
     /* animate menu drop-down */
-    $delay-increment: 150ms;
+    $delay-increment: 130ms;
 
     @for $i from 2 through 7 {
         .nav__links li:nth-child(#{$i}) {
