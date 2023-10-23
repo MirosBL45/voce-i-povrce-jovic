@@ -28,16 +28,12 @@ function NotFound() {
   return (
     <section>
       <div className="container notfound__container">
-        <h2>Page Not Found</h2>
-        <Link to={'/'} className="btn">
-          Go Back Home
-        </Link>
-        <div>
-          <p>
-            Automatsko preusmeravanje na početnu stranicu za {counter} sekundi.
-          </p>
-          {/* Dodajte ostatak sadržaja */}
-        </div>
+        <h1>Oooops..</h1>
+        <h2>That page cannot be found</h2>
+        <p>
+          Go back to the <Link to={'/'}>Homepage</Link>, or you will be
+          redirected in {counter} seconds.
+        </p>
       </div>
     </section>
   );
