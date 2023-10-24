@@ -220,7 +220,6 @@ const Trainer6 = require("../images/trainer6.jpg");
 
 export const trainers = [
   {
-    id: 1,
     image: Trainer1,
     name: "John Doe",
     job: "Aerobic Trainer",
@@ -232,7 +231,6 @@ export const trainers = [
     ],
   },
   {
-    id: 2,
     image: Trainer2,
     name: "Daniel vinyo",
     job: "Speed Trainer",
@@ -244,7 +242,6 @@ export const trainers = [
     ],
   },
   {
-    id: 3,
     image: Trainer3,
     name: "Edem Quist",
     job: "Flexibility Trainer",
@@ -256,7 +253,6 @@ export const trainers = [
     ],
   },
   {
-    id: 4,
     image: Trainer4,
     name: "Shatta Wale",
     job: "Body Composition Trainer",
@@ -268,7 +264,6 @@ export const trainers = [
     ],
   },
   {
-    id: 5,
     image: Trainer5,
     name: "Diana Ayi",
     job: "Circuit Trainer",
@@ -280,7 +275,6 @@ export const trainers = [
     ],
   },
   {
-    id: 6,
     image: Trainer6,
     name: "Wayne Carter",
     job: "Physical Intelligence Trainer",
