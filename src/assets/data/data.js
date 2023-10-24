@@ -150,7 +150,6 @@ export const testimonials = [
 
 export const plans = [
   {
-    id: 1,
     name: "Silver Package for you",
     desc: "This package is perfect for beginners who need constant help",
     price: 29.99,
@@ -171,7 +170,6 @@ export const plans = [
     ],
   },
   {
-    id: 2,
     name: "Gold Package for you",
     desc: "This is the perfect package for beginners who know what their doing",
     price: 49.99,
@@ -192,7 +190,6 @@ export const plans = [
     ],
   },
   {
-    id: 3,
     name: "Platinum Package for you",
     desc: "This package is perfect for busy people who need home service",
     price: 89.99,
